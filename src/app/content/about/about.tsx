@@ -8,8 +8,8 @@ export const About = () => {
       <div className="flex justify-end pr-20">
         <Image className="rounded-3xl shadow-blue-cyan shadow-2xl"
         src={perfil}
-        height={400}
-        width={400}
+        height={300}
+        width={300}
         alt="Maycon Vinicius"/>
       </div>
 
