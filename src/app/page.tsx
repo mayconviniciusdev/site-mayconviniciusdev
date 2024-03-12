@@ -1,8 +1,11 @@
-import Image from "next/image";
+import React from "react";
+
+import { Header } from "./content/header";
 
 const Page = () => {
   return (
     <div>
+      <Header/>
     </div>
   );
 }
