@@ -18,7 +18,10 @@ const config: Config = {
         'blue-cyan': '#0E7178',
         'white': '#F6F6F6',
         'grey': '#474747',
-      }
+      },
+      height: {
+        'full-screen': '630px'
+      },
     },
   },
   plugins: [],
