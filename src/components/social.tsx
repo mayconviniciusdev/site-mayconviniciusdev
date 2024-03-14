@@ -1,14 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-export const Social = () => {
+interface SocialProps {
+  githubIcon?: IconProp;
+  linkedinIcon: IconProp;
+  instagramIcon: IconProp;
+}
+
+export const Social = ({githubIcon, linkedinIcon, instagramIcon }: SocialProps) => {
   return (
     <div className="flex justify-center gap-4 text-blue text-b">
-      <FontAwesomeIcon icon={faGithub} className="w-8"/>
-      <FontAwesomeIcon icon={faLinkedin} className="w-8"/>
-      <FontAwesomeIcon icon={faInstagram} className="w-8"/> 
+      {githubIcon && <FontAwesomeIcon icon={githubIcon} className="w-8"/>}
+      <FontAwesomeIcon icon={linkedinIcon} className="w-8"/>
+      <FontAwesomeIcon icon={instagramIcon} className="w-8"/> 
     </div>
-    
   );
 }
