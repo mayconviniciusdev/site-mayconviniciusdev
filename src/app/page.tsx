@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "./content/header";
 import { Banner } from "./content/banner";
 import { About } from "./content/about";
+import { Work } from "./content/work";
 
 const Page = () => {
   return (
@@ -10,6 +11,7 @@ const Page = () => {
       <Header/>
       <Banner/>
       <About/>
+      <Work/>
     </div>
   );
 }
