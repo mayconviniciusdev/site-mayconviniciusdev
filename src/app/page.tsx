@@ -7,6 +7,7 @@ import { Work } from "./content/work";
 import { Services } from "./content/services";
 import { Testimonials } from "./content/testimonials";
 import { Contact } from "./content/contact";
+import { Footer } from "./content/footer";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
       <Services/>
       <Testimonials/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
