@@ -1,9 +1,11 @@
 import { ButtonForm } from "@/components/button"
+import { Social } from "@/components/social"
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-blue to-blue-cyan py-12">
-      <div className="max-w-2xl mx-auto">
+    <div className="bg-gradient-to-r from-blue to-blue-cyan py-20">
+      <div className="max-w-4xl mx-auto">
         <div className="mx-4">
           <h2 className="font-bold text-white">CONTATO</h2>
           <p className="py-2 text-base text-white/80">Sinta-se a vontade de entrar em contato comigo, seja para conversar sobre suas dúvidas, para dicas de livros, séries e filmes ou até mesmo para um bate-papo sobre sua ideia ou necessidade!</p>
@@ -21,6 +23,7 @@ export const Contact = () => {
             <textarea placeholder="Fale um pouco sobre sua ideia ou necessidade!" id="message" 
             className="w-full py-2 pl-4 my-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"></textarea>
             <div className="text-center"><ButtonForm/></div>
+            <div className="flex mt-4"><Social githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
           </form>
         </div>
       </div>
