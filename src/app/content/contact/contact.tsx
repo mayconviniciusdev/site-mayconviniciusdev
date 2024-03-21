@@ -1,5 +1,5 @@
 import { ButtonForm } from "@/components/button"
-import { Social } from "@/components/social"
+import { SocialForm } from "@/components/social"
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export const Contact = () => {
@@ -23,7 +23,7 @@ export const Contact = () => {
             <textarea placeholder="Fale um pouco sobre sua ideia ou necessidade!" id="message" 
             className="w-full py-2 pl-4 my-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"></textarea>
             <div className="text-center"><ButtonForm/></div>
-            <div className="flex mt-4"><Social githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
+            <div className="flex mt-4"><SocialForm githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
           </form>
         </div>
       </div>
