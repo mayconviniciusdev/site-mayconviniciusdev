@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 
 import { Header } from "./content/header";
 import { Banner } from "./content/banner";
