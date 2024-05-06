@@ -1,6 +1,6 @@
 export type ContactFormType = {
   name: string;
   email: string;
-  tel: number;
+  tell: number;
   message: string;
 }
