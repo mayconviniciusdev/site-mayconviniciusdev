@@ -10,8 +10,5 @@ export const Button = () => {
 
 export const ButtonForm = () => {
   return (
-    <div className="text-sm bg-white py-4 rounded-lg hover:bg-white/90 cursor-pointer">
-        <button className="text-blue font-bold">ENTRE EM CONTATO</button>
-    </div>
-  );
+    <button className="text-blue text-sm rounded-lg bg-white hover:bg-white/90 font-bold py-4 w-full">ENTRE EM CONTATO</button>);
 }
