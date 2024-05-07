@@ -54,32 +54,40 @@ export const Contact = () => {
             <p className="py-2 text-base text-white/80">Sinta-se a vontade de entrar em contato comigo, seja para conversar sobre suas dúvidas, para dicas de livros, séries e filmes ou até mesmo para um bate-papo sobre sua ideia ou necessidade!</p>
 
             <form ref={form} onSubmit={handleSubmit(sendEmail)} className="mt-8">
-              <input 
-              {...register('name')}
-              placeholder="Como você se chama?"
-              className="w-full py-2 pl-4 mb-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
-              {errors.name && <p>{errors.name.message as string}</p>}
-
-              <div className="grid grid-cols-2 gap-x-4">
+              <div className="my-5">
                 <input 
-                {...register('email')}
-                placeholder="Seu melhor e-mail..."
-                className="py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
-                {errors.email && <p>{errors.email.message as string}</p>}
-
-                <input
-                {...register('tell')}
-                placeholder="Agora seu Whatsapp..."
-                className="py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
-                {errors.tell && <p>{errors.tell.message as string}</p>}
+                {...register('name')}
+                placeholder="Como você se chama?"
+                className="w-full py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
+                {errors.name && <p className="text-red-300 mt-1">{errors.name.message as string}</p>}
               </div>
 
-              <textarea 
-                {...register('message')}
-                placeholder="Fale um pouco sobre sua ideia ou necessidade!" id="message" 
-                className="w-full py-2 pl-4 my-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white">
-              </textarea>
-              {errors.message && <p>{errors.message.message as string}</p>}
+              <div className="grid grid-cols-2 gap-x-4">
+                <div>
+                  <input 
+                  {...register('email')}
+                  placeholder="Seu melhor e-mail..."
+                  className="w-full py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
+                  {errors.email && <p className="text-red-300 mt-1">{errors.email.message as string}</p>}
+                </div>
+
+                <div>
+                  <input
+                  {...register('tell')}
+                  placeholder="Agora seu Whatsapp..."
+                  className="w-full py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white"/>
+                  {errors.tell && <p className="text-red-300 mt-1">{errors.tell.message as string}</p>}
+                </div>
+              </div>
+
+              <div className="my-5">
+                <textarea 
+                  {...register('message')}
+                  placeholder="Fale um pouco sobre sua ideia ou necessidade!" id="message" 
+                  className="w-full py-2 pl-4 rounded-lg bg-transparent border border-white placeholder-white focus:outline-none focus:border-white/50 focus:placeholder-white">
+                </textarea>
+                {errors.message && <p className="text-red-300">{errors.message.message as string}</p>}
+              </div>
 
               <div className="text-center"><ButtonForm/></div>
               <div className="flex mt-4"><SocialForm githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
