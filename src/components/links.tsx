@@ -9,7 +9,7 @@ interface SocialProps {
   instagramIcon: IconProp;
 }
 
-export const Social = ({githubIcon, linkedinIcon, instagramIcon}: SocialProps) => {
+export const LinktreeBlue = ({githubIcon, linkedinIcon, instagramIcon}: SocialProps) => {
   return (
     <div className="flex justify-center gap-4 text-blue">
       <Link target="_blank" href={"https://github.com/mayconviniciusdev"}>{githubIcon && <FontAwesomeIcon icon={githubIcon} className="h-8 hover:text-blue/80"/>}</Link>
@@ -19,7 +19,7 @@ export const Social = ({githubIcon, linkedinIcon, instagramIcon}: SocialProps) =
   );
 }
 
-export const SocialForm = ({githubIcon, linkedinIcon, instagramIcon}: SocialProps) => {
+export const LinktreeWhite = ({linkedinIcon, instagramIcon, githubIcon}: SocialProps) => {
   return (
     <div className="flex justify-center gap-4 text-white">
       <Link target="_blank" href={"https://github.com/mayconviniciusdev"}>{githubIcon && <FontAwesomeIcon icon={githubIcon} className="h-8 hover:text-white/80"/>}</Link>

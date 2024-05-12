@@ -1,7 +1,7 @@
 import { Element } from "react-scroll"
 
 import { ButtonForm } from "@/components/button"
-import { SocialForm } from "@/components/social"
+import { LinktreeWhite } from "@/components/links"
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 import { z } from "zod"
@@ -90,7 +90,7 @@ export const Contact = () => {
               </div>
 
               <div className="text-center"><ButtonForm/></div>
-              <div className="flex mt-4"><SocialForm githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
+              <div className="flex mt-4"><LinktreeWhite githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
             </form>
           </div>
         </div>

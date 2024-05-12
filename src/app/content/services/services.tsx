@@ -1,6 +1,6 @@
 import { Element } from "react-scroll"
 
-import { Social } from "@/components/social"
+import { LinktreeBlue } from "@/components/links"
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export const Services = () => {
@@ -10,7 +10,7 @@ export const Services = () => {
         <div className="grid gap-y-4 mx-4">
           <h2 className="font-bold text-blue">MEUS SERVIÇOS</h2>
           <div className="flex justify-start">
-            <Social githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}></Social>
+            <LinktreeBlue githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/>
           </div>
         </div>
 

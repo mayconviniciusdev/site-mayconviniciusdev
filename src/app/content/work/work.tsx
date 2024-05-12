@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
 import Link from "next/link";
 
-import { Social } from "@/components/social";
+import { LinktreeBlue } from "@/components/links";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Image from "next/image";
@@ -18,7 +18,7 @@ export const Work = () => {
               <p className="font-bold text-sm text-blue-cyan hover:text-blue-cyan/50">VER TODOS</p>
             </Link>
           </div>
-          <div><Social linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
+          <div><LinktreeBlue linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
         </div>
 
         <div className="grid grid-cols-3 gap-4 mx-4">

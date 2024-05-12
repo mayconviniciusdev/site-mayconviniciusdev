@@ -1,7 +1,7 @@
 import { Element, Link } from "react-scroll";
 
 import { Button } from "@/components/button";
-import { Social } from "@/components/social";
+import { LinktreeBlue } from "@/components/links";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Header = () => {
@@ -9,7 +9,7 @@ export const Header = () => {
     <Element name="header">
       <div className="py-12">
         <div className="flex justify-center">
-          <Social githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/>
+          <LinktreeBlue githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/>
         </div>
         
         <div className="mt-8 flex justify-center items-center gap-4 font-semibold text-sm text-blue-cyan cursor-pointer">
