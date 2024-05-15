@@ -62,8 +62,8 @@ export const Contact = () => {
                 {errors.name && <p className="text-red-300 mt-1">{errors.name.message as string}</p>}
               </div>
 
-              <div className="grid grid-cols-2 gap-x-4">
-                <div>
+              <div className="md:grid md:grid-cols-2 md:gap-x-4">
+                <div className="my-4 md:my-0">
                   <input 
                   {...register('email')}
                   placeholder="Seu melhor e-mail..."
@@ -71,7 +71,7 @@ export const Contact = () => {
                   {errors.email && <p className="text-red-300 mt-1">{errors.email.message as string}</p>}
                 </div>
 
-                <div>
+                <div className="my-4 md:my-0">
                   <input
                   {...register('tell')}
                   placeholder="Agora seu Whatsapp..."
