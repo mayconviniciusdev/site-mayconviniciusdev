@@ -21,13 +21,14 @@ export const Work = () => {
           <div><LinktreeBlue linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mx-4">
+        <div className="grid grid-cols-1 gap-4 mx-4 lg:grid-cols-3 md:grid-cols-2">
           <div className="hover:opacity-80">
             <Link target="_blank" href={"//"}>
               <Image
               alt=""
               src={base}
               quality={100}
+              style={{width: '100%', height: 'auto'}}
               className="rounded-tl-3xl"/>
             </Link>
           </div>
@@ -37,7 +38,8 @@ export const Work = () => {
               <Image
               alt=""
               src={base}
-              quality={100}/>
+              quality={100}
+              style={{width: '100%', height: 'auto'}}/>
             </Link>
           </div>
           
@@ -47,6 +49,7 @@ export const Work = () => {
               alt=""
               src={base}
               quality={100}
+              style={{width: '100%', height: 'auto'}}
               className="rounded-tr-3xl"/>
             </Link>
           </div>
