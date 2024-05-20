@@ -1,3 +1,5 @@
+"use client"
+
 import { Element, Link } from "react-scroll";
 
 import { Button } from "@/components/button";

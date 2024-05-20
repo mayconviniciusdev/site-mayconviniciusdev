@@ -1,12 +1,13 @@
 'use client'
+
 import React from 'react';
 
 import { Slider } from '@/components/slider';
 import { SwiperProps, SwiperSlide } from "swiper/react";
 
 import Image from 'next/image';
-import banner from '../../../../public/banner.png'
-import logo from '../../../../public/logo.png'
+import banner from '../../../public/banner.png'
+import logo from '../../../public/logo.png'
 
 export const Banner = () => {
   const settings: SwiperProps = {

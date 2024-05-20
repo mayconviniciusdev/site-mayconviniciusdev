@@ -1,3 +1,4 @@
+"use client"
 import { Link } from "react-scroll"
 
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons"

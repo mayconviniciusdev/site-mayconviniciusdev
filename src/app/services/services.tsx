@@ -1,3 +1,4 @@
+"use client"
 import { Element } from "react-scroll"
 
 import { LinktreeBlue } from "@/components/links"

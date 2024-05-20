@@ -1,3 +1,5 @@
+"use client"
+
 import { Element } from "react-scroll"
 
 import { ButtonForm } from "@/components/button"

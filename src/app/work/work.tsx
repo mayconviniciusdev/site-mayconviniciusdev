@@ -1,3 +1,4 @@
+"use client"
 import { Element } from "react-scroll";
 import Link from "next/link";
 
@@ -5,7 +6,7 @@ import { LinktreeBlue } from "@/components/links";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Image from "next/image";
-import base from '../../../../public/base.png';
+import base from '../../../public/base.png';
 
 export const Work = () => {
   return (
@@ -23,7 +24,7 @@ export const Work = () => {
 
         <div className="grid grid-cols-1 gap-4 mx-4 lg:grid-cols-3 md:grid-cols-2">
           <div className="hover:opacity-80">
-            <Link target="_blank" href={"//"}>
+            <Link target="_blank" href={"https://mayconviniciusdev.com/"}>
               <Image
               alt=""
               src={base}
@@ -34,7 +35,7 @@ export const Work = () => {
           </div>
 
           <div className="hover:opacity-80">
-            <Link target="_blank" href={"//"}>
+            <Link target="_blank" href={"https://mayconviniciusdev.com/"}>
               <Image
               alt=""
               src={base}
@@ -44,7 +45,7 @@ export const Work = () => {
           </div>
           
           <div className="hover:opacity-80">
-            <Link target="_blank" href={"//"}>
+            <Link target="_blank" href={"https://mayconviniciusdev.com/"}>
               <Image
               alt=""
               src={base}

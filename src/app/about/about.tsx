@@ -1,7 +1,8 @@
+"use client"
 import { Element } from 'react-scroll';
 
 import Image from "next/image";
-import perfil from "../../../../public/foto-perfil.png"
+import perfil from "../../../public/foto-perfil.png"
 import { Button } from "@/components/button";
 
 export const About = () => {

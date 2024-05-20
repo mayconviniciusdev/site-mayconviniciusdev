@@ -1,13 +1,11 @@
-"use client"
-
-import { Header } from "./content/header";
-import { Banner } from "./content/banner";
-import { About } from "./content/about";
-import { Work } from "./content/work";
-import { Services } from "./content/services";
-import { Testimonials } from "./content/testimonials";
-import { Contact } from "./content/contact";
-import { Footer } from "./content/footer";
+import { Header } from "./header";
+import { Banner } from "./banner";
+import { About } from "./about";
+import { Work } from "./work";
+import { Services } from "./services";
+import { Testimonials } from "./testimonials";
+import { Contact } from "./contact";
+import { Footer } from "./footer";
 
 const Page = () => {
   return (

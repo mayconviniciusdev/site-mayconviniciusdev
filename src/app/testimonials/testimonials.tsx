@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image"
-import robson from "../../../../public/foto-robson.png"
+import robson from "../../../public/foto-robson.png"
 
 import { Slider } from "@/components/slider"
 import { SwiperProps, SwiperSlide } from "swiper/react"
