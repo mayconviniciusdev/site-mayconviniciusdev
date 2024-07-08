@@ -10,9 +10,7 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto py-12 ">
         <div className="mx-4 flex justify-between items-center lg:grid lg:gap-y-4 ">
           <h2 className="font-bold text-blue">MEUS SERVIÇOS</h2>
-          <div className="flex">
-            <LinktreeBlue githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/>
-          </div>
+          <div><LinktreeBlue githubIcon={faGithub} linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
         </div>
 
         <div className="mx-4 lg:grid lg:grid-cols-2">
