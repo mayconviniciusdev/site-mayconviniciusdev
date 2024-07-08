@@ -1,6 +1,4 @@
 'use client'
-import Image from "next/image"
-import robson from "../../../public/foto-robson.png"
 
 import { Slider } from "@/components/slider"
 import { SwiperProps, SwiperSlide } from "swiper/react"
@@ -24,9 +22,9 @@ export const Testimonials = () => {
             <div className="flex flex-col items-center">
               <p className="text-white text-center text-base">"Sou muito grato por ter encontrado esse profissional pra fazer meu site da forma que imaginei. O bom gosto e dedicação que ele implantou no meu projeto não há dinheiro que pague."</p>
               <div className="flex items-center mt-10">
-                <Image
+                <img
                 alt="Robson"
-                src={robson}
+                src='/foto-robson.png'
                 width={50}
                 height={50}
                 className="rounded-full"/>
