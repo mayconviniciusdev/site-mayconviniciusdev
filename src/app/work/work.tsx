@@ -15,12 +15,12 @@ export const Work = () => {
               <Link target="_blank" href={"https://github.com/mayconviniciusdev"} className="font-bold text-xs text-blue-cyan hover:text-blue-cyan/50 block md:inline"> VER TODOS</Link>
             </h2>
           </>
-          <div><LinktreeBlue linkedinIcon={faLinkedin} instagramIcon={faInstagram}/></div>
+          <LinktreeBlue linkedinIcon={faLinkedin} instagramIcon={faInstagram}/>
         </div>
 
         <div className="grid grid-cols-1 gap-4 mx-4 lg:grid-cols-3 md:grid-cols-2">
           <div className="hover:opacity-80">
-            <Link target="_blank" href={'/works/jorgefreitasdesign'}>
+            <Link href={'/jorgefreitasdesign'}>
               <img
               alt="Base"
               src="/base.png"
