@@ -1,29 +1,9 @@
-import type { Metadata } from "next";
+"use client";
+import Head from 'next/head';
+import { useEffect } from 'react';
 
-export const metadata: Metadata = {
-  description:'Sou um desenvolvedor e programador web freelancer especializado ajudar empresas e projetos independentes a alcançar sucesso em sua jornada online. Entre em contato para serviços de desenvolvimento web personalizados e eficientes.',
-  keywords: ['maycon vinicius', 'desenvolvedor web', 'programador freelancer', 'desenvolvedor freelancer', 'programador web', 'contato maycon vinicius', 'desenvolvimento web'],
-  authors: [{name: 'Maycon Vinicius', url: 'https://www.linkedin.com/in/mayconviniciusdev'}],
-  robots: {index: true, follow: true},
-
-  openGraph: {
-    type: 'website',
-    url: 'https://mayconviniciusdev.com',
-    title: 'Desenvolvedor Web',
-    description: 'Tenho como objetivo implementar tecnologias e ajudar empresas ou projetos independentes em sua jornada online. Vamos trabalhar juntos?',
-    images: [
-      {url: '/foto-perfil.png',
-      width: 1200,
-      height: 630,
-      alt: 'Foto de Perfil'}
-    ]
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@dmayconvinicius',
-    creator: '@dmayconvinicius'
-  },
-};
+import TagManager from 'react-gtm-module';
+const tagManagerArgs = {gtmId: 'GTM-T5BGHK4C'};
 
 import { Header } from "./header";
 import { Banner } from "./banner";
@@ -35,17 +15,37 @@ import { Contact } from "./contact";
 import { Footer } from "./footer";
 
 const Page = () => {
+  useEffect(() => { TagManager.initialize(tagManagerArgs);}, []);
+
   return (
-    <div>
-      <Header/>
-      <Banner/>
-      <About/>
-      <Work/>
-      <Services/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <>
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+          __html: 
+          `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-T5BGHK4C');`,
+        }}/>
+      </Head>
+
+      <div>
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5BGHK4C" height="0" width="0" style={{display: 'none', visibility:'hidden'}}></iframe>
+        </noscript>
+        
+        <Header/>
+        <Banner/>
+        <About/>
+        <Work/>
+        <Services/>
+        <Testimonials/>
+        <Contact/>
+        <Footer/>
+      </div>
+    </>
   );
 }
 
